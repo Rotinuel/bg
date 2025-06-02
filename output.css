@@ -683,6 +683,10 @@ video {
   margin-bottom: 1rem;
 }
 
+.mb-20{
+  margin-bottom: 5rem;
+}
+
 .flex{
   display: flex;
 }
@@ -913,6 +917,14 @@ video {
 
 .pb-4{
   padding-bottom: 1rem;
+}
+
+.pt-12{
+  padding-top: 3rem;
+}
+
+.pb-12{
+  padding-bottom: 3rem;
 }
 
 .text-center{
