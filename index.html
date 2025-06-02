@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon -->
+    <!-- remix icon  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"
+    />
+    <!-- swipers css -->
+    <link href="./output.css" rel="stylesheet" />
+    <title>Black Gear</title>
+  </head>
+  <body>
+    <header id="navbar" class="bg-gray-200 fixed w-full top-0 left-0 z-50">
+      <nav class="container flex items-center justify-between h-16 sm:h-20">
+        <div class="font-Lobster sm:text-2xl text-black">Black Gear</div>
+        <div
+          id="nav-menu"
+          class="absolute top-0 left-[-100%] min-h-[80vh] w-full bg-grey-900/80 backdrop-blur-sm flex items-center justify-center duration-300 overflow-hidden lg:static lg:min-h-fit lg:bg-transparent lg:w-auto"
+        >
+          <ul class="flex flex-col items-center gap-8 lg:flex-row">
+            <li>
+              <a href="#home" class="nav-link">Home</a>
+            </li>
+            <li>
+              <a href="#about" class="nav-link">About</a>
+            </li>
+            <li>
+              <a href="#services" class="nav-link">Services</a>
+            </li>
+            <li>
+              <a href="#review" class="nav-link">Reviews</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link"></a>
+            </li>
+            <li>
+              <a href="#" class="nav-link"></a>
+            </li>
+          </ul>
+          <div class="absolute bottom-0 -right-10 opacity-90 lg:hidden">
+            <img src="assets/img/gear-1.png" alt="gear_image" class="w-32" />
+          </div>
+          <div class="absolute -top-5 -left-5 opacity-90 lg:hidden">
+            <img src="assets/img/gear-2.png" alt="gear_image" class="w-32" />
+          </div>
+        </div>
+        <div
+          class="text-xl sm:text-3xl cursor-pointer z-50 text-black lg:hidden"
+          id="hamburger-menu"
+        >
+          <i class="ri-menu-4-line" id="hamburger"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="relative">
+        <div class="container">
+          <div
+            class="w-64 h-64 bg-gray-700 rounded-full blur-3xl -z-10 opacity-40 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+          ></div>
+          <div
+            class="w-64 h-64 bg-gray-700 rounded-full blur-3xl -z-10 opacity-40 absolute right-0 bottom-0"
+          ></div>
+
+          <div class="flex flex-col items-center gap-5 lg:flex-row">
+            <!-- content -->
+            <div class="w-full space-y-5 lg:w-1/2">
+              <h1>
+                <span class="text-gray-500">Lorem</span> ipsum dolor.<br />
+                lorem
+                <span class="text-gray-500">Lorem </span>ipsum.<br />
+              </h1>
+              <p class="text-gray-900 font-Lobster">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatum sed temporibus debitis laborum non voluptas et
+                voluptatem reiciendis unde aut.
+              </p>
+              <div
+                class="flex flex-col gap-2 sm:flex-row md:gap-4 lg:pt-5 xl:pt-10"
+              >
+                <button class="btn">
+                  <span>Shop Now</span>
+                  <i class="ri-arrow-right-line"></i>
+                </button>
+                <button class="btn btn_outline">
+                  <span>Know More</span>
+                  <i class="ri-arrow-right-line"></i>
+                </button>
+              </div>
+              <div class="flex items-center gap-5 text-lg lg:text-2xl lg:pt-10">
+                <i
+                  class="ri-facebook-fill text-gray-500 hover:text-gray-900 duration-300 cursor-pointer"
+                ></i>
+                <i
+                  class="ri-twitter-x-line text-gray-500 hover:text-gray-900 duration-300 cursor-pointer text-base"
+                ></i>
+                <i
+                  class="ri-instagram-line text-gray-500 hover:text-gray-900 duration-300 cursor-pointer"
+                ></i>
+                <i
+                  class="ri-linkedin-fill text-gray-500 hover:text-gray-900 duration-300 cursor-pointer"
+                ></i>
+              </div>
+            </div>
+            <!-- images -->
+            <div class="w-full relative lg:w-1/2">
+              <img src="assets/img/home.png" alt="home" />
+
+              <div
+                class="absolute -top-10 right-0 opacity-30 animate-movingY xl:top-5"
+              >
+                <i class="ri-settings-2-line text-5xl text-gray-500"></i>
+              </div>
+              <div
+                class="absolute bottom-0 left-0 opacity-30 xl:bottom-12 animate-rotating"
+              >
+                <i class="ri-tools-line text-5xl text-gray-500"></i>
+              </div>
+              <div
+                class="hidden absolute -top-8 -left-5 opacity-30 lg:block animate-scalingUp"
+              >
+                <i class="ri-loader-4-line text-5xl text-gray-500"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="bg-white text-gray-900 py-20">
+        <div
+          class="container w-full grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
+        >
+          <!-- card 1-->
+          <div
+            class="border border-gray-300 p-5 curosr-pointer rounded-md hover:shadow-2xl -hover:-translate-y-1 duration-300 space-y-5"
+          >
+            <div class="flex items-center gap-5">
+              <i class="ri-truck-line text-3xl md:text-4xl xl:text-5xl"></i>
+              <p class="md:text-lg font-bold">
+                Fast <br />
+                Delivery
+              </p>
+            </div>
+            <p class="font-Lobster">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit,
+              mollitia.
+            </p>
+          </div>
+          <!-- card 2-->
+          <div
+            class="border border-gray-300 p-5 curosr-pointer rounded-md hover:shadow-2xl -hover:-translate-y-1 duration-300 space-y-5"
+          >
+            <div class="flex items-center gap-5">
+              <i
+                class="ri-customer-service-line text-3xl md:text-4xl xl:text-5xl"
+              ></i>
+              <p class="md:text-lg font-bold">
+                Great Customer<br />
+                Service
+              </p>
+            </div>
+            <p class="font-Lobster">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit,
+              mollitia.
+            </p>
+          </div>
+          <!-- card 3-->
+          <div
+            class="border border-gray-300 p-5 curosr-pointer rounded-md hover:shadow-2xl -hover:-translate-y-1 duration-300 space-y-5"
+          >
+            <div class="flex items-center gap-5">
+              <i
+                class="ri-tsetting-2-line text-3xl md:text-4xl xl:text-5xl"
+              ></i>
+              <p class="md:text-lg font-bold">
+                Original <br />
+                Equipemt
+              </p>
+            </div>
+            <p class="font-Lobster">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit,
+              mollitia.
+            </p>
+          </div>
+          <!-- card 4-->
+          <div
+            class="border border-gray-300 p-5 curosr-pointer rounded-md hover:shadow-2xl -hover:-translate-y-1 duration-300 space-y-5"
+          >
+            <div class="flex items-center gap-5">
+              <i
+                class="ri-money-dollar-circle-line text-3xl md:text-4xl xl:text-5xl"
+              ></i>
+              <p class="md:text-lg font-bold">
+                Affordable <br />
+                Price
+              </p>
+            </div>
+            <p class="font-Lobster">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit,
+              mollitia.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <section id="about" class="relative overflow-hidden">
+        <div
+          class="flex flex-col items-center gap-3 text-center mb-10 md:mb-20"
+        >
+          <h2 class="title">About Us</h2>
+          <p>Follow instruction for more</p>
+        </div>
+
+        <div class="container space-y-10 xl:space-y-0">
+          <!-- item 1 -->
+          <div class="flex flex-col items-center gap-5 lg:flex-row">
+            <!-- image -->
+            <div class="w-full lg:w-1/2">
+              <img
+                src="#"
+                alt=""
+                class="w-full sm:w-2/3 lg:w-full xl:w-2/3 mx-auto"
+              />
+            </div>
+
+            <!-- content -->
+            <div class="w-full lg:w-1/2">
+              <div class="space-y-5">
+                <h3>
+                  Make your
+                  <span class="text-gray-900"
+                    >safety equipment Purchase with</span
+                  >
+                  easier with<br />us
+                </h3>
+                <p class="text-gray-700 font-Lobster">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+                  quisquam facilis soluta quidem adipisci libero eius minima at
+                  doloremque repellat!
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- item 2 -->
+          <div class="flex flex-col items-center gap-5 lg:flex-row-reverse">
+            <!-- image -->
+            <div class="w-full lg:w-1/2">
+              <img
+                src="#"
+                alt=""
+                class="w-full sm:w-2/3 lg:w-full xl:w-2/3 mx-auto"
+              />
+            </div>
+
+            <!-- content -->
+            <div class="w-full lg:w-1/2">
+              <div class="space-y-5">
+                <h3>
+                  Come with us
+                  <span class="text-gray-900"
+                    >to increase your safety</span
+                  >
+                </h3>
+                <p class="text-gray-700 font-Lobster">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+                  quisquam facilis soluta quidem adipisci libero eius minima at
+                  doloremque repellat!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about"></section>
+
+      <section id="about"></section>
+    </main>
+
+    <!-- main.js -->
+    <script src="main.js"></script>
+  </body>
+</html>

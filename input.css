@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Lobster&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    @apply bg-gray-200 text-black font-Jost tracking-wider;
+}
+
+section{
+    @apply py-20 md:py-28;
+}
+
+h1{
+    @apply text-3xl md:text-4xl xl:text-5xl font-bold;
+}
+
+h2{
+    @apply text-2xl md:text-3xl xl:text-4xl
+}
+
+h3{
+    @apply text-xl md:text-2xl xl:text-3xl
+}
+
+.nav-link {
+    @apply text-lg font-bold duration-300 text-gray-600;
+}
+
+.nav-link:hover {
+    @apply text-black;
+}
+
+.title{
+    @apply font-Lobster text-gray-500;
+}
+
+.btn {
+    @apply border border-gray-500 bg-gray-500 text-white rounded-md px-5 py-2 duration-300;
+}
+
+.btn span {
+    @apply font-bold;
+}
+
+.btn:hover {
+    @apply opacity-90;
+}
+
+.btn_outline {
+    @apply bg-transparent;
+}
+
+.btn_outline:hover {
+    @apply bg-gray-500;
+}
