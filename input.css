@@ -4,6 +4,11 @@
 @tailwind components;
 @tailwind utilities;
 
+
+html{
+    @apply overflow-x-hidden scroll-smooth;
+}
+
 body{
     @apply bg-gray-200 text-black font-Jost tracking-wider;
 }
@@ -32,6 +37,8 @@ h3{
     @apply text-black;
 }
 
+/* active link */
+
 .title{
     @apply font-Lobster text-gray-500;
 }
@@ -58,4 +65,8 @@ h3{
 
 .service__card:hover img{
     @apply -top-8;
+}
+
+.swiper-pagination-bullet {
+    @apply bg-gray-500 w-3 h-3;
 }
